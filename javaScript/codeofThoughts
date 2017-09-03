@@ -117,6 +117,20 @@ var contacts = [
 
 
 function lookUp(firstName, prop){
+// 请把你的代码写在这条注释以下
+  for(var i = 0; i<contacts.length; i++){
+    if(firstName == contacts[i].firstName){
+      if(!contacts[i][prop]) return "No such property";
+      else return contacts[i][prop];
+    }
+  }
+  // 到此，说明没有匹配到firstName
+  return "No such contact";
+  
+// 请把你的代码写在这条注释以上
 }
 
-QQQ: 如何高效搜索？ （算法和数据结构才是根本）最佳实践！
+// 你可以修改这一行来测试你的代码
+lookUp("Akira", "likes");
+
+furtherQ: 如何高效搜索？ （算法和数据结构才是根本）最佳实践！
