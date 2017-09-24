@@ -1,0 +1,57 @@
+程序使用AngularJS + Bootstrap3
+1 一定要看清版本。
+我在布局时，发现代码无效，后来才发现自己用的是Bootstrap3，看的文档却是版本2的
+
+2 遇到问题时使用英文搜索，且注意（可根据搜索结果不断改进搜索词）提问措辞，多学点搜索技巧。
+在使用进度条时我遇到style的width如何修改问题
+最后搜索：Change bootstrap progress-bar width from angularjs
+在stackoverflow上找到答案。
+在Angular中，使用表达式赋值，在这里就不能用style=，要ng-style=
+动态设定进度条样式，使用ng-class
+
+3 ng-repeat 中 ng-model
+好像每个item都有一个子作用域
+在To Read 的 addbook 中遇到问题——我拿不到input中的bookname。因为是ng-repeat成的
+ng-model="$parent.conf[$index]"
+
+4 chrome浏览器不允许get本地非html file
+
+5 angular 的 model 绑定真的很棒，方便。省得数据传来传去
+edit 与 save 的切换，我使用把showChangePage存在对应的每本book中（作为属性）
+
+6 一个object 多个reference，通过任何一个reference修改object，都有效。
+
+7 controller 之间传递数据的正确姿势？
+
+8 在进行delete操作时，数组的 splice 有效；
+我把数组直接赋值为 []，不起作用，我不知道为什么。
+
+9 同一浏览器，我从本地打开程序和打开在codepen上的结果不一致。
+不解！
+
+10 把book从reading改为done，不能只是添加引用，需要deepcopy对象。
+
+11 程序核心只是数据结构，其他都不算什么。
+
+12 关于数据结构
+是否可以通过修改状态位来实现读没读过。
+
+13 过滤显示，使用过滤器 filter
+
+*****
+1 在顶级控制器中定义数据
+
+2 考虑复用性
+一个自定义过滤器，不仅当前程序可以用，其他程序也可以用。不写死
+
+3 控制器嵌套
+作用域继承
+子作用域继承上层的数据，并根据需要过滤数据。
+
+4 constant 常量
+
+5 $index
+
+
+
+
