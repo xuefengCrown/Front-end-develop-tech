@@ -1,0 +1,11 @@
+改进程序
+
+1 将数据放在顶级controller中
+阅读《cotroller 之间如何通信和access数据》
+scope 的继承
+
+cotroller 的执行顺序是怎样的？
+本页面的script 先执行？
+
+2 添加分页
+更好的方案是自定义指令替代ng-repeat
