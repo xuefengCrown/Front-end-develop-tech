@@ -11,3 +11,5 @@ cotroller 的执行顺序是怎样的？
 更好的方案是自定义指令替代ng-repeat
 
 数据存储结构的最佳实践？？？
+
+deepcopy and shallowcopy
